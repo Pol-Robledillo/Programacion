@@ -13,10 +13,10 @@ namespace Metodes
             Console.Write(MsgInputNum);
             num = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(MsgOutput, num, Potencia(num));
+            Console.WriteLine(MsgOutput, num, Absolut(num));
         }
 
-        public static int Potencia(int num)
+        public static int Absolut(int num)
         {
             if (num < 0)
             {
