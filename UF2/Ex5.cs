@@ -2,7 +2,7 @@
 
 namespace Metodes
 {
-    public class Pr4
+    public class Pr5
     {
         public static void Main()
         {
