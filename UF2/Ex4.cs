@@ -28,7 +28,7 @@ namespace Metodes
             if (select == 1)
             {
                 text = text.ToUpper();
-            } else if (select == 2)
+            } else
             {
                 text = text.ToLower();
             }
