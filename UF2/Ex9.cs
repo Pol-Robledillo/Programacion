@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Metodes
 {
@@ -7,45 +7,43 @@ namespace Metodes
         public static void Main()
         {
             int num;
-            const string MsgInputFirstNum = "Introdueix la base: ";
-            const string MsgInputSecondNum = "Introdueix l'exponent: ";
+            const string MsgInputNum = "Introdueix un número: ";
 
-            Console.Write(MsgInputFirstNum);
+            Console.Write(MsgInputNum);
             num = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine(Smaller(num));
-            Console.WriteLine(Range(num));
+            Console.WriteLine();
+            Smaller(num);
+            Console.WriteLine();
+            Range(num);
         }
 
-        public static string Range(int num)
+        public static void Smaller(int num)
+        {
+            int bigger;
+            const string MsgInputBigger = "Quin número ha de ser més gran?  ";
+            const string MsgIsSmaller = "{0} és més petit que {1}.";
+            const string MsgIsNotSmaller = "{0} no és més petit que {1}.";
+
+            Console.Write(MsgInputBigger);
+            bigger = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine((num < bigger ? MsgIsSmaller : MsgIsNotSmaller), num, bigger);
+        }
+
+        public static void Range(int num)
         {
             int max, min;
-            const string MsgInputMax = "Introdueix el màxim";
-            const string MsgInputMin = "Introdueix el mínim";
+            const string MsgInputMax = "Introdueix el màxim: ";
+            const string MsgInputMin = "Introdueix el mínim: ";
             const string MsgInRange = "El número {0} es troba entre {1} i {2}.";
             const string MsgNotInRange = "El número {0} no es troba entre {1} i {2}.";
 
-            Console.WriteLine(MsgInputMax);
-            max = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(MsgInputMin);
+            Console.Write(MsgInputMin);
             min = Convert.ToInt32(Console.ReadLine());
+            Console.Write(MsgInputMax);
+            max = Convert.ToInt32(Console.ReadLine());
 
-            return ((num > min) || (num < max)) ? MsgInRange : MsgNotInRange;
-        }
-
-        public static bool Smaller(int num)
-        {
-            int bigger;
-            bigger = Convert.ToInt32(Console.ReadLine());
-
-            if (num < bigger)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
-
+            Console.WriteLine((((num > min) && (num < max)) ? MsgInRange : MsgNotInRange), num, min, max);
         }
     }
 }
