@@ -2,7 +2,7 @@
 
 namespace Metodes
 {
-    class Pr8
+    class Pr11
     {
         public static void Main()
         {
