@@ -11,7 +11,7 @@ namespace Metodes
 
             for (int i = 0; i < Numbers;  i++)
             {
-                Console.WriteLine(randomNumber.Next(Min, Max));
+                Console.WriteLine(randomNumber.Next(Max));
             }
         }
     }
