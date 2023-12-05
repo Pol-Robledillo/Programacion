@@ -16,12 +16,7 @@ namespace Metodes
             Console.Write(MsgInputSecondNum);
             secondNum = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(MsgOutput, firstNum, secondNum, Potencia(firstNum, secondNum));
-        }
-
-        public static double Potencia(int firstNum, int secondNum)
-        {
-            return Math.Pow(firstNum, secondNum);
+            Console.WriteLine(MsgOutput, firstNum, secondNum, Math.Pow(firstNum, secondNum));
         }
     }
 }
