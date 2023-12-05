@@ -7,7 +7,7 @@ namespace Metodes
         public static void Main()
         {
             int searchNum;
-            const int Numbers = 10, Max = 200;
+            const int Numbers = 10, Max = 201;
             const string MsgInputSearch = "Introdueix quin número vols buscar: ";
             const string MsgNumberFound = "El número {0} es troba a la llista.";
             const string MsgNumberNotFound = "El número {0} no es troba a la llista.";
