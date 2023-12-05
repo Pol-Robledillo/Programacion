@@ -13,12 +13,7 @@ namespace Metodes
             Console.Write(MsgInputNum);
             num = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(MsgOutput, num, Absolut(num));
-        }
-
-        public static int Absolut(int num)
-        {
-            return Math.Abs(num);
+            Console.WriteLine(MsgOutput, num, Math.Abs(num));
         }
     }
 }
