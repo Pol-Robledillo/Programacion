@@ -11,6 +11,10 @@ namespace Metodes
             const string MsgInputBigger = "Quin número ha de ser més gran?  ";
             const string MsgInputMax = "Introdueix el màxim: ";
             const string MsgInputMin = "Introdueix el mínim: ";
+            const string MsgIsSmaller = "{0} és més petit que {1}.";
+            const string MsgIsNotSmaller = "{0} no és més petit que {1}.";
+            const string MsgInRange = "El número {0} es troba entre {1} i {2}.";
+            const string MsgNotInRange = "El número {0} no es troba entre {1} i {2}.";
 
             Console.Write(MsgInputNum);
             num = Convert.ToInt32(Console.ReadLine());
@@ -18,30 +22,38 @@ namespace Metodes
 
             Console.Write(MsgInputBigger);
             bigger = Convert.ToInt32(Console.ReadLine());
-            Smaller(num, bigger);
+            if (Validate(num, bigger))
+            {
+                Console.WriteLine(MsgIsSmaller);
+            } else
+            {
+                Console.WriteLine(MsgIsNotSmaller);
+            }
             Console.WriteLine();
 
             Console.Write(MsgInputMin);
             min = Convert.ToInt32(Console.ReadLine());
             Console.Write(MsgInputMax);
             max = Convert.ToInt32(Console.ReadLine());
-            Range(num, min, max);
+            if (Validate(num, min, max))
+            {
+                Console.WriteLine(MsgInRange);
+            }
+            else
+            {
+                Console.WriteLine(MsgNotInRange);
+            }
         }
 
-        public static void Smaller(int num, int bigger)
+        public static bool Validate(int num, int bigger)
         {
-            const string MsgIsSmaller = "{0} és més petit que {1}.";
-            const string MsgIsNotSmaller = "{0} no és més petit que {1}.";
 
-            Console.WriteLine((num < bigger ? MsgIsSmaller : MsgIsNotSmaller), num, bigger);
+            return num < bigger ? true : false;
         }
 
-        public static void Range(int num, int min, int max)
+        public static bool Validate(int num, int min, int max)
         {
-            const string MsgInRange = "El número {0} es troba entre {1} i {2}.";
-            const string MsgNotInRange = "El número {0} no es troba entre {1} i {2}.";
-
-            Console.WriteLine((((num > min) && (num < max)) ? MsgInRange : MsgNotInRange), num, min, max);
+            return ((num > min) && (num < max)) ? true : false;
         }
     }
 }
