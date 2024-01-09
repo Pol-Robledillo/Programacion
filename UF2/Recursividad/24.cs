@@ -37,7 +37,6 @@ namespace Metodes
         }
         public static int MultRusRec(int firstNum, int secondNum)
         {
-            int result = 0;
             if (firstNum == 1)
             {
                 return secondNum;
