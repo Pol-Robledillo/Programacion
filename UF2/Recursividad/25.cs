@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.Versioning;
 
 namespace Metodes
@@ -18,10 +18,11 @@ namespace Metodes
         }
         public static int DecToBin(int number, int mult)
         {
-            if (number == 1)
+            if (number == 1 || number == 0)
             {
                 return (number % 2) * mult;
-            } else
+            }
+            else
             {
                 return ((number % 2) * mult) + DecToBin(number / 2, mult * 10);
             }
