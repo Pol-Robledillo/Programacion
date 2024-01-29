@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 class Program
@@ -14,7 +14,7 @@ class Program
         const string MsgError = "S'ha produït un error: {0}";
         int choice = 0;
         string fileName;
-        
+
         try
         {
             Console.WriteLine(MsgFileInput);
@@ -55,19 +55,22 @@ class Program
 
     static void ReadFile(string fileName)
     {
-        const string MsgShowContent = "Contingut del fitxer {0}:\n{1}";
+        const string MsgShowContent = "Contingut del fitxer {0}:\n";
         const string MsgNotExists = "El fitxer {0} no existeix.";
         const string MsgShowLines = "El fitxer {0} té {1} línies.";
-        int numLines = 0;
+        int numLines;
 
         if (File.Exists(fileName))
         {
             using (StreamReader sr = new StreamReader(fileName))
             {
-                string[] lines = File.ReadAllLines(fileName);
-                numLines = lines.Length;
-                string content = sr.ReadToEnd();
-                Console.WriteLine(MsgShowContent, fileName, content);
+                string[] content = File.ReadAllLines(fileName);
+                numLines = content.Length;
+                Console.WriteLine(MsgShowContent, fileName);
+                for (int i = 0; i < content.Length; i++)
+                {
+                    Console.WriteLine(content[i]);
+                }
                 Console.WriteLine(MsgShowLines, fileName, numLines);
             }
         }
