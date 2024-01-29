@@ -1,10 +1,10 @@
 ##Implementa la classe “Cat” que defineixi el següent:##
-#properties:#
+###properties:###
 - Name
 - Age
 - Breed
 - Favorite Food
-#behaviours:#
+###behaviours:###
 - Make meow sound
 - Play
 - Wash
