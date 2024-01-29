@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace EjerciciosOOP
 {
-    internal class Lamp
+    public class Lamp
     {
         private bool isOn;
+        private string shape, lightbulbType;
 
-
-        public void SetIsOn(bool isOn)
-        {
-            this.isOn = isOn;
-        }
-        public bool GetIsOn()
-        {
-            return isOn;
-        }
+        public bool IsOn { get { return isOn; } set { isOn = value; } }
+        public string Shape { get { return shape; } set { shape = value; } }
+        public string LightbulbType { get { return lightbulbType; } set { lightbulbType = value; } }
     }
 }
