@@ -24,25 +24,25 @@ namespace EjerciciosOOP
             this.Breed = breed;
             this.FavFood = favFood;
         }
-        public void Meow(string name)
+        public void Meow()
         {
-            Console.WriteLine($"{name} is meowing");
+            Console.WriteLine($"{Name} is meowing");
         }
-        public void Play(string name)
+        public void Play()
         {
-            Console.WriteLine($"{name} is playing");
+            Console.WriteLine($"{Name} is playing");
         }
-        public void Wash(string name)
+        public void Wash()
         {
-            Console.WriteLine($"{name} is washing himself");
+            Console.WriteLine($"{Name} is washing himself");
         }
-        public void Eat(string name, string favFood)
+        public void Eat()
         {
-            Console.WriteLine($"{name} is eating {favFood}");
+            Console.WriteLine($"{Name} is eating {FavFood}");
         }
-        public void Hunt(string name)
+        public void Hunt()
         {
-            Console.WriteLine($"{name} is hunting");
+            Console.WriteLine($"{Name} is hunting");
         }
     }
 }
