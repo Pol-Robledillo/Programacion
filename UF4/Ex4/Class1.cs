@@ -19,10 +19,10 @@ namespace EjerciciosOOP
 
         public Cat(int age, string name, string breed, string favFood)
         {
-            this.age = age;
-            this.name = name;
-            this.breed = breed;
-            this.favFood = favFood;
+            this.Age = age;
+            this.Name = name;
+            this.Breed = breed;
+            this.FavFood = favFood;
         }
         public void Meow(string name)
         {
