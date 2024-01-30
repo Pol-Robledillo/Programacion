@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using EjerciciosOOP;
 namespace OOP
 {
@@ -11,11 +11,11 @@ namespace OOP
             Cat cat3 = new Cat(5, "Benito", "Sphynx", "Tuna");
             Cat cat4 = new Cat(2, "Kim", "Li Hua", "Salmon");
 
-            cat1.Meow(cat1.Name);
-            cat2.Play(cat2.Name);
-            cat3.Wash(cat3.Name);
-            cat4.Eat(cat4.Name, cat4.FavFood);
-            cat1.Hunt(cat1.Name);
+            cat1.Meow();
+            cat2.Play();
+            cat3.Wash();
+            cat4.Eat();
+            cat1.Hunt();
         }
     }
 }
