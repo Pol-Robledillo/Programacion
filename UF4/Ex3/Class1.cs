@@ -18,9 +18,9 @@ namespace EjerciciosOOP
 
         public Bicycle(int price, string brand, string color)
         {
-            this.price = price;
-            this.brand = brand;
-            this.color = color;
+            this.Price = price;
+            this.Brand = brand;
+            this.Color = color;
         }
     }
 }
