@@ -6,7 +6,7 @@ Create the PaymentCard object’s constructor, which is passed the opening balan
 Write the ToString method, which will return the card’s balance in the form “The card has a balance of X euros”.
 Here is the template for the PaymentCard.
 
-~~namespace exercise16
+~~ namespace exercise16
 {
   public class PaymentCard
   {
