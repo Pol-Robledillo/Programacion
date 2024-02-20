@@ -28,12 +28,13 @@ namespace exercise16
 
 The following main program tests the class:
 
+~~~
 public static void Main()
 {
   PaymentCard card = new PaymentCard(50);
   Console.WriteLine(card);
 }
-
+~~~
 
 The card has a balance of 50 euros
 
