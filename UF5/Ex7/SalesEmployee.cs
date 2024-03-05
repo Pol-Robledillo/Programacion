@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +16,10 @@ namespace ActividadesUF5
         public SalesEmployee(string code, string name, string surname, DateTime birthDate, DateTime hireDate, float comission) : base(code, name, surname, birthDate, hireDate)
         {
             Comission = comission;
+        }
+        public override float GetAnnualSalary()
+        {
+            return base.GetAnnualSalary() + Comission;
         }
         public override string ToString()
         {
