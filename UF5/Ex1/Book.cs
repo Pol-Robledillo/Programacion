@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,7 @@ namespace ActividadesUF5
 {
     public class Book : IComparable<Book>
     {
-        public static int CurrentId = 1;
+        private static int CurrentId = 1;
         const string DefaultTitle = "Unknown";
         const int DefaultNumPages = 0;
         public int Id { get; set; }
@@ -21,19 +21,14 @@ namespace ActividadesUF5
             NumPages = numPages;
             CurrentId++;
         }
-        public Book()
-        {
-            Id = CurrentId;
-            Title = DefaultTitle;
-            NumPages = DefaultNumPages;
-            CurrentId++;
-        }
+        public Book() : this(DefaultTitle, DefaultNumPages) { }
         public override string ToString()
         {
             return "Id: " + Id + " | Title: " + Title + " | NumPages: " + NumPages;
         }
         public int CompareTo(Book? other)
         {
+            if (other == null) return 1;
             return this.NumPages.CompareTo(other?.NumPages);
         }
     }
