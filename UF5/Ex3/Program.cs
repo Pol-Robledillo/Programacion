@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Veterinario
+namespace ActividadesUF5
 {
     public class Program
     {
