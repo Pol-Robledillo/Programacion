@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -59,7 +59,7 @@ namespace ActividadesUF5
             }
             return years;
         }
-        public float GetAnnualSalary()
+        public virtual float GetAnnualSalary()
         {
             return MonthlySalary * Payments;
         }
