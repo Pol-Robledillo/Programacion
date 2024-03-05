@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace ActividadesUF5
 {
     public class Ex4
@@ -17,11 +17,11 @@ namespace ActividadesUF5
                 Console.WriteLine(emp.ToString());
             }
             List<SalesEmployee> salesEmployees = new List<SalesEmployee>();
-            salesEmployees.Add(new SalesEmployee("SE1", "Peter", "Parker", new DateTime(1962, 1, 1), new DateTime(2016, 1, 1), 2000, 15, 0.1f));
-            salesEmployees.Add(new SalesEmployee("SE2", "Clark", "Kent", new DateTime(1938, 1, 1), new DateTime(2015, 1, 1), 2000, 15, 0.1f));
-            salesEmployees.Add(new SalesEmployee("SE3", "Bruce", "Wayne", new DateTime(1939, 1, 1), new DateTime(2008, 1, 1), 2000, 15, 0.1f));
-            salesEmployees.Add(new SalesEmployee("SE4", "Tony", "Stark", new DateTime(1963, 1, 1), new DateTime(2008, 1, 1), 2000, 15, 0.1f));
-            salesEmployees.Add(new SalesEmployee("SE5", "Steve", "Rogers", new DateTime(1941, 1, 1), new DateTime(2009, 1, 1), 2000, 15, 0.1f));
+            salesEmployees.Add(new SalesEmployee("SE1", "Peter", "Parker", new DateTime(1962, 1, 1), new DateTime(2016, 1, 1), 2000, 15, 134.1f));
+            salesEmployees.Add(new SalesEmployee("SE2", "Clark", "Kent", new DateTime(1938, 1, 1), new DateTime(2015, 1, 1), 2000, 15, 426.1f));
+            salesEmployees.Add(new SalesEmployee("SE3", "Bruce", "Wayne", new DateTime(1939, 1, 1), new DateTime(2008, 1, 1), 2000, 15, 500.1f));
+            salesEmployees.Add(new SalesEmployee("SE4", "Tony", "Stark", new DateTime(1963, 1, 1), new DateTime(2008, 1, 1), 2000, 15, 1345.6f));
+            salesEmployees.Add(new SalesEmployee("SE5", "Steve", "Rogers", new DateTime(1941, 1, 1), new DateTime(2009, 1, 1), 2000, 15, 1000f));
             salesEmployees.Sort();
             foreach (SalesEmployee emp in salesEmployees)
             {
