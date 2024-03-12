@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ActividadesUF5
 {
-    public class Ex4
+    public class Ex5
     {
         public static void Main()
         {
